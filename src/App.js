@@ -6,8 +6,8 @@ export default function App() {
     const valgtKreditorListe = React.useRef();
 
     const leggTil = () => {
-      var fromSelect = KreditorListe //document.getElementById('a');
-      var toSelect = valgtKreditorListe//document.getElementById('b');
+      var fromSelect = KreditorListe.current //document.getElementById('a');
+      var toSelect = valgtKreditorListe.current//document.getElementById('b');
       //toSelect.innerHTML = "";
       for (var i = 0; i < fromSelect.options.length; i++) {
           var option = fromSelect.options[i];
